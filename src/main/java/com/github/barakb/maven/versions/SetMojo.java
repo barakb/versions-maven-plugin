@@ -202,7 +202,7 @@ public class SetMojo extends AbstractMojo {
     private File getBackupFor(File file) {
         int index = file.getAbsolutePath().lastIndexOf(".");
         if (-1 < index) {
-            return new File(file.getAbsolutePath().substring(0, index) + ".backup.xml");
+            return new File(file.getAbsolutePath().substring(0, index) + ".xml.versionsBackup");
         }
         return null;
     }

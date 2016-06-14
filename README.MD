@@ -22,7 +22,7 @@ Maven usage:
             <plugin>
                 <groupId>com.github.barakb</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>1.2</version>
                 <configuration>
                     <includes>
                         <include>org.xap:*</include>
