@@ -11,7 +11,7 @@
 
     <name>versions-maven-plugin</name>
 
-    <description>A maven plugin that change version without read all dependency, this is usfal when you have 2 maven
+    <description>A maven plugin that change version without read all dependency, this is useful when you have 2 maven
         project that depends on each other needed to be renamed
     </description>
     <url>https://github.com/barakb/versions-maven-plugin</url>
