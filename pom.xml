@@ -6,7 +6,7 @@
 
     <groupId>com.github.barakb</groupId>
     <artifactId>versions-maven-plugin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>maven-plugin</packaging>
 
     <name>versions-maven-plugin</name>
@@ -168,6 +168,16 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.4</version>
+                <configuration>
+                    <goalPrefix>plugin</goalPrefix>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
     <profiles>
         <profile>
@@ -213,6 +223,14 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-plugin-plugin</artifactId>
+                        <version>3.4</version>
+                        <configuration>
+                            <goalPrefix>plugin</goalPrefix>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
