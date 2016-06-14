@@ -17,19 +17,12 @@ Maven usage:
             <url>https://oss.sonatype.org/content/groups/public</url>
         </repository>
     </repositories>
-    <dependencies>
-        <dependency>
-            <groupId>com.github.barakb</groupId>
-            <artifactId>versions-maven-plugin</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>com.github.barakb</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
                 <configuration>
                     <includes>
                         <include>org.xap:*</include>
